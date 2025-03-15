@@ -18,7 +18,7 @@ const projects: Project[] = [
     title: "Faith Commuinity Baptist School Website",
     description: "A modern educational institution website featuring admissions, academics, and student life. Built with a focus on user experience and accessibility.",
     technologies: ["React", "Taailwind CSS", "TypeScript"],
-    imageUrl: "/faithBaptist.png",
+    imageUrl: "./faithBaptist.png",
     githubUrl: "https://github.com/JAYDEN2904/Faith-Baptist-Project.git",
     liveUrl: "https://ecommerce-demo.com",
     category: "frontend",
@@ -28,7 +28,7 @@ const projects: Project[] = [
     title: "AQUANET",
     description: "AquaNet is a comprehensive e-commerce platform built using the MERN stack. This project aims to facilitate a seamless connection between fish producers, suppliers, and consumers in the fish farming industry. I was on the backend development team for this project.",
     technologies: ["React", "Taailwind CSS", "Node.js", "MongoDB"],
-    imageUrl: "/AQUANET.jpeg",
+    imageUrl: "./AQUANET.jpeg",
     githubUrl: "https://github.com/Code-Crafters-Innovation/AquaNet-Frontend.git",
     liveUrl: "https://dashboard-demo.com",
     category: "fullstack",
@@ -38,7 +38,7 @@ const projects: Project[] = [
     title: "Bookshop Management System",
     description: "A bookshop management system built using the MERN stack. This project aims to facilitate a seamless connection between bookshop owners, suppliers, and consumers in the bookshop industry.",
     technologies: ["React", "Taailwind CSS", "Node.js", "MongoDB"],
-    imageUrl: "/bookshop.png",
+    imageUrl: "./bookshop.png",
     githubUrl: "https://github.com/JAYDEN2904/Bookshop-Management-System.git",
     liveUrl: "https://dashboard-demo.com",
     category: "fullstack",
@@ -134,6 +134,14 @@ const Projects: React.FC = () => {
                     initial={{ scale: 1 }}
                     animate={{ scale: hoveredIndex === index ? 1.1 : 1 }}
                     transition={{ duration: 0.3 }}
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.onerror = null; // Prevent infinite loop
+                      target.style.backgroundColor = '#374151'; // Gray background as fallback
+                      target.style.display = 'flex';
+                      target.style.alignItems = 'center';
+                      target.style.justifyContent = 'center';
+                    }}
                   />
                 </div>
 
