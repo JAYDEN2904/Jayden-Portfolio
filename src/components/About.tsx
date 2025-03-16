@@ -48,7 +48,7 @@ const About: React.FC = () => {
 
   const statistics: Statistic[] = [
     {
-      value: '3+',
+      value: '2+',
       label: 'Years Experience',
       icon: <Code className="w-6 h-6" />
     },
