@@ -7,8 +7,8 @@ import { emailjsConfig } from '../config/emailjs';
 const Contact: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    user_name: '',
+    user_email: '',
     subject: '',
     message: ''
   });
@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
       );
       
       setStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      setFormData({ user_name: '', user_email: '', subject: '', message: '' });
     } catch (error) {
       console.error('Error sending email:', error);
       setStatus('error');
@@ -142,14 +142,14 @@ const Contact: React.FC = () => {
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-2">
+                  <label htmlFor="user_name" className="block text-sm font-medium text-gray-400 mb-2">
                     Name
                   </label>
                   <input
                     type="text"
-                    id="name"
+                    id="user_name"
                     name="user_name"
-                    value={formData.name}
+                    value={formData.user_name}
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all"
@@ -157,14 +157,14 @@ const Contact: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-2">
+                  <label htmlFor="user_email" className="block text-sm font-medium text-gray-400 mb-2">
                     Email
                   </label>
                   <input
                     type="email"
-                    id="email"
+                    id="user_email"
                     name="user_email"
-                    value={formData.email}
+                    value={formData.user_email}
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all"
