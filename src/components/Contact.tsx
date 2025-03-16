@@ -14,6 +14,7 @@ const Contact: React.FC = () => {
   });
 
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState<string>('');
 
   useEffect(() => {
     emailjs.init(emailjsConfig.publicKey);
@@ -30,27 +31,25 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('submitting');
+    setErrorMessage('');
 
-    const templateParams = {
-      from_name: formData.from_name,
-      reply_to: formData.reply_to,
-      subject: formData.subject,
-      message: formData.message
-    };
+    if (!formRef.current) return;
 
     try {
-      await emailjs.send(
+      const result = await emailjs.sendForm(
         emailjsConfig.serviceId,
         emailjsConfig.templateId,
-        templateParams,
+        formRef.current,
         emailjsConfig.publicKey
       );
       
+      console.log('Email sent successfully:', result.text);
       setStatus('success');
       setFormData({ from_name: '', reply_to: '', subject: '', message: '' });
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error sending email:', error);
       setStatus('error');
+      setErrorMessage(error.text || 'Failed to send message. Please try again.');
     }
   };
 
@@ -252,7 +251,7 @@ const Contact: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   className="text-center text-red-400 bg-red-500/10 p-4 rounded-lg"
                 >
-                  Oops! Something went wrong. Please try again later.
+                  {errorMessage || 'Oops! Something went wrong. Please try again later.'}
                 </motion.div>
               )}
             </motion.form>
