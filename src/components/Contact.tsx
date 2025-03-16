@@ -7,8 +7,8 @@ import { emailjsConfig } from '../config/emailjs';
 const Contact: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
-    user_name: '',
-    user_email: '',
+    from_name: '',
+    reply_to: '',
     subject: '',
     message: ''
   });
@@ -31,16 +31,23 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setStatus('submitting');
 
+    const templateParams = {
+      from_name: formData.from_name,
+      reply_to: formData.reply_to,
+      subject: formData.subject,
+      message: formData.message
+    };
+
     try {
-      await emailjs.sendForm(
+      await emailjs.send(
         emailjsConfig.serviceId,
         emailjsConfig.templateId,
-        formRef.current!,
+        templateParams,
         emailjsConfig.publicKey
       );
       
       setStatus('success');
-      setFormData({ user_name: '', user_email: '', subject: '', message: '' });
+      setFormData({ from_name: '', reply_to: '', subject: '', message: '' });
     } catch (error) {
       console.error('Error sending email:', error);
       setStatus('error');
@@ -142,14 +149,14 @@ const Contact: React.FC = () => {
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="user_name" className="block text-sm font-medium text-gray-400 mb-2">
+                  <label htmlFor="from_name" className="block text-sm font-medium text-gray-400 mb-2">
                     Name
                   </label>
                   <input
                     type="text"
-                    id="user_name"
-                    name="user_name"
-                    value={formData.user_name}
+                    id="from_name"
+                    name="from_name"
+                    value={formData.from_name}
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all"
@@ -157,14 +164,14 @@ const Contact: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="user_email" className="block text-sm font-medium text-gray-400 mb-2">
+                  <label htmlFor="reply_to" className="block text-sm font-medium text-gray-400 mb-2">
                     Email
                   </label>
                   <input
                     type="email"
-                    id="user_email"
-                    name="user_email"
-                    value={formData.user_email}
+                    id="reply_to"
+                    name="reply_to"
+                    value={formData.reply_to}
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all"
