@@ -23,8 +23,8 @@ const About: React.FC = () => {
 
   const timeline: TimelineItem[] = [
     {
-      year: '2024 - Present',
-      title: 'Software Developer',
+      year: 'September 2024 - November 2024',
+      title: 'Software Engineer, Intern',
       description: 'Developed and maintained dynamic webpages using PHP and Laravel frameworks',
       category: 'work',
       company: 'Links Engineering Limited',
@@ -32,7 +32,7 @@ const About: React.FC = () => {
     },
     {
       year: 'Present',
-      title: "Bachelor's in Computer Science",
+      title: "Bachelors in Computer Science",
       description: 'Currently pursuing a Bachelor\'s degree in Computer Science at the University of Ghana',
       category: 'education',
       school: 'University of Ghana',
@@ -111,14 +111,14 @@ const About: React.FC = () => {
             <div className="prose prose-invert max-w-none">
               <h3 className="text-2xl font-semibold mb-4 text-white">My Journey</h3>
               <p className="text-gray-400 leading-relaxed">
-                I'm a passionate software engineer with expertise in building modern web applications.
-                My journey in tech started with a curiosity about how things work, which evolved into
-                a deep love for creating elegant solutions to complex problems.
+              Hey, I’m Jayden! I’m an aspiring software engineer with a passion for building modern and user-friendly web applications. My journey into tech started with a curiosity about how things work, which quickly grew into a love for solving problems through code.
               </p>
               <p className="text-gray-400 leading-relaxed">
-                I specialize in full-stack development, with a particular focus on React, Node.js,
-                and cloud technologies. When I'm not coding, you'll find me contributing to open
-                source projects or mentoring aspiring developers.
+              I specialize in full-stack development, with a strong focus on React and Node.js. I enjoy crafting clean and efficient solutions, whether it’s designing interactive frontends or building the logic behind the scenes.
+Beyond coding, I love working on personal projects, learning new technologies, and sharing what I know with others. I’m always looking for opportunities to grow, collaborate, and create something meaningful.
+              </p>
+              <p className="text-gray-400 leading-relaxed">
+              Let’s connect and build something great! 🚀
               </p>
             </div>
 
