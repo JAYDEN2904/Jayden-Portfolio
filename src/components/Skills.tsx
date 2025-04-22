@@ -38,7 +38,7 @@ const skills: Skill[] = [
     category: "frontend",
     proficiency: 90,
     description: "Programming language for interactive web development",
-    yearsOfExperience: 3,
+    yearsOfExperience: 2,
     projects: 3
   },
   {
@@ -47,8 +47,8 @@ const skills: Skill[] = [
     category: "frontend",
     proficiency: 90,
     description: "Building modern, responsive web applications with React and its ecosystem",
-    yearsOfExperience: 3,
-    projects: 4
+    yearsOfExperience: 2,
+    projects: 3
   },
   {
     name: "React Native",
@@ -57,7 +57,7 @@ const skills: Skill[] = [
     proficiency: 80,
     description: "Building mobile applications with React Native and its ecosystem",
     yearsOfExperience: 2,
-    projects: 2
+    projects: 1
   },
   {
     name: "TypeScript",
@@ -75,7 +75,7 @@ const skills: Skill[] = [
     proficiency: 80,
     description: "Server-side development with Express, REST APIs, and microservices",
     yearsOfExperience: 2,
-    projects: 3
+    projects: 1
   },
   {
     name: "MongoDB",
@@ -84,7 +84,7 @@ const skills: Skill[] = [
     proficiency: 75,
     description: "NoSQL database for flexible and scalable applications",
     yearsOfExperience: 2,
-    projects: 3
+    projects: 1
   },
   {
     name: "MySQL",
@@ -93,7 +93,7 @@ const skills: Skill[] = [
     proficiency: 70,
     description: "Relational database for structured data storage and retrieval",
     yearsOfExperience: 2,
-    projects: 3
+    projects: 1
   },
   {
     name: "Tailwind CSS",
