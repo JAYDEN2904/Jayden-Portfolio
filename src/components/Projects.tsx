@@ -23,7 +23,7 @@ const projects: Project[] = [
     technologies: ["React", "Taailwind CSS", "TypeScript"],
     imageUrl: faithBaptistImage,
     githubUrl: "https://github.com/JAYDEN2904/Faith-Baptist-Project.git",
-    liveUrl: "https://ecommerce-demo.com",
+    liveUrl: "https://fcbcs.vercel.app",
     category: "frontend",
     featured: true
   },
@@ -38,13 +38,13 @@ const projects: Project[] = [
     featured: true
   },
   {
-    title: "Bookshop Management System",
-    description: "A bookshop management system built using the MERN stack. This project aims to facilitate a seamless connection between bookshop owners, suppliers, and consumers in the bookshop industry.",
-    technologies: ["React", "Taailwind CSS", "Node.js", "MongoDB"],
-    imageUrl: bookshopImage,
-    githubUrl: "https://github.com/JAYDEN2904/Bookshop-Management-System.git",
-    liveUrl: "https://dashboard-demo.com",
-    category: "fullstack",
+    title: "Mordern Restaurant Website",
+    description: "A fully responsive and visually engaging restaurant website built with React. This project features a dynamic menu with category filtering, a reservation form with validation, a photo gallery, and a newsletter sign-up section. Smooth transitions and animations enhance the user experience, making it feel elegant and interactive across all devices.",
+    technologies: ["React", "Taailwind CSS", "Framer Motion"],
+    imageUrl: "src/assets/Restaurant.png",
+    githubUrl: "https://github.com/JAYDEN2904/Restaurant.git",
+    liveUrl: "https://saveur-restaurant.vercel.app",
+    category: "frontend",
     featured: true
   }
   // Add more projects here
