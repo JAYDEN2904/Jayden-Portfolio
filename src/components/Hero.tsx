@@ -212,7 +212,7 @@ const Hero = () => {
               <Linkedin size={24} />
             </motion.a>
             <motion.a
-              href="mailto:osafojayden290405@gmail.com"
+              href="mailto:jaydenosafo.dev@gmail.com"
               whileHover={{ y: -3 }}
               className="text-gray-400 hover:text-white transition-colors"
             >

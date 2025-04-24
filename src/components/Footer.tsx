@@ -76,8 +76,8 @@ const Footer: React.FC = () => {
             <div className="text-gray-400 space-y-2">
               <div className="flex items-center justify-end gap-2">
                 <Mail size={16} className="text-orange-500" />
-                <a href="mailto:osafojayden290405@gmail.com" className="hover:text-orange-500 transition-colors">
-                  osafojayden290405@gmail.com
+                <a href="mailto:jaydenosafo.dev@gmail.com" className="hover:text-orange-500 transition-colors">
+                  jaydenosafo.dev@gmail.com
                 </a>
               </div>
               <div className="flex items-center justify-end gap-2">

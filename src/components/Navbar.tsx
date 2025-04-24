@@ -87,7 +87,7 @@ const Navbar = () => {
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="mailto:osafojayden290405@gmail.com"
+                href="mailto:jaydenosafo.dev@gmail.com"
                 className="text-gray-300 hover:text-orange-500 transition-colors"
               >
                 <Mail size={20} />
