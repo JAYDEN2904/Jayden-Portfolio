@@ -4,6 +4,7 @@ import { Github, ExternalLink, Folder } from 'lucide-react';
 import faithBaptistImage from '../assets/faithBaptist.png';
 import aquanetImage from '../assets/AQUANET.jpeg';
 import bookshopImage from '../assets/bookshop.png';
+import restaurantImage from '../assets/Restaurant.png'
 
 interface Project {
   title: string;
@@ -41,7 +42,7 @@ const projects: Project[] = [
     title: "Mordern Restaurant Website",
     description: "A fully responsive and visually engaging restaurant website built with React. This project features a dynamic menu with category filtering, a reservation form with validation, a photo gallery, and a newsletter sign-up section. Smooth transitions and animations enhance the user experience, making it feel elegant and interactive across all devices.",
     technologies: ["React", "Taailwind CSS", "Framer Motion"],
-    imageUrl: "src/assets/Restaurant.png",
+    imageUrl: restaurantImage,
     githubUrl: "https://github.com/JAYDEN2904/Restaurant.git",
     liveUrl: "https://saveur-restaurant.vercel.app",
     category: "frontend",
