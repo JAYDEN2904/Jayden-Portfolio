@@ -101,8 +101,8 @@ const skills: Skill[] = [
     category: "frontend",
     proficiency: 90,
     description: "CSS framework for rapid UI development",
-    yearsOfExperience: 2,
-    projects: 3
+    yearsOfExperience: 1,
+    projects: 2
   },
   {
     name: "PHP",

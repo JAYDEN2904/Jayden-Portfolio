@@ -31,6 +31,14 @@ const About: React.FC = () => {
       location: 'Accra, Ghana'
     },
     {
+      year: 'March 2025 - Present',
+      title: 'Software Engineer, Intern',
+      description: 'Designed wireframes and mockups of websites using Figma. Also collaborated with senior engineers on projects. I also developed websites using the React framework.',
+      category: 'work',
+      company: 'Ghana-Indian Kofi Annan Centre of Excellence',
+      location: 'Accra, Ghana'
+    },
+    {
       year: 'Present',
       title: "Bachelors in Computer Science",
       description: 'Currently pursuing a Bachelor\'s degree in Computer Science at the University of Ghana',
