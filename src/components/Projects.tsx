@@ -19,7 +19,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Faith Commuinity Baptist School Website",
+    title: "School Website",
     description: "A modern educational institution website featuring admissions, academics, and student life. Built with a focus on user experience and accessibility.",
     technologies: ["React", "Taailwind CSS", "TypeScript"],
     imageUrl: faithBaptistImage,
