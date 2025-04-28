@@ -60,15 +60,6 @@ const skills: Skill[] = [
     projects: 1
   },
   {
-    name: "TypeScript",
-    icon: <Code2 className="w-8 h-8 text-blue-500" />,
-    category: "frontend",
-    proficiency: 85,
-    description: "Type-safe development with advanced TypeScript features and patterns",
-    yearsOfExperience: 2,
-    projects: 3
-  },
-  {
     name: "Node.js",
     icon: <Server className="w-8 h-8 text-green-500" />,
     category: "backend",
