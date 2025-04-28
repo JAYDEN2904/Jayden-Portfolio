@@ -21,7 +21,7 @@ const projects: Project[] = [
   {
     title: "School Website",
     description: "A modern educational institution website featuring admissions, academics, and student life. Built with a focus on user experience and accessibility.",
-    technologies: ["React", "Taailwind CSS", "TypeScript"],
+    technologies: ["React", "Taailwind CSS"],
     imageUrl: faithBaptistImage,
     githubUrl: "https://github.com/JAYDEN2904/Faith-Baptist-Project.git",
     liveUrl: "https://fcbcs.vercel.app",
