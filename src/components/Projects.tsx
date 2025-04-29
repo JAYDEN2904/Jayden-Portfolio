@@ -21,7 +21,7 @@ const projects: Project[] = [
   {
     title: "School Website",
     description: "A modern educational institution website featuring admissions, academics, and student life. Built with a focus on user experience and accessibility.",
-    technologies: ["React", "Taailwind CSS"],
+    technologies: ["React", "Tailwind CSS"],
     imageUrl: faithBaptistImage,
     githubUrl: "https://github.com/JAYDEN2904/Faith-Baptist-Project.git",
     liveUrl: "https://fcbcs.vercel.app",
@@ -31,7 +31,7 @@ const projects: Project[] = [
   {
     title: "AQUANET",
     description: "AquaNet is a comprehensive e-commerce platform built using the MERN stack. This project aims to facilitate a seamless connection between fish producers, suppliers, and consumers in the fish farming industry. I was on the backend development team for this project.",
-    technologies: ["React", "Taailwind CSS", "Node.js", "MongoDB"],
+    technologies: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
     imageUrl: aquanetImage,
     githubUrl: "https://github.com/Code-Crafters-Innovation/AquaNet-Frontend.git",
     liveUrl: "https://dashboard-demo.com",
@@ -41,7 +41,7 @@ const projects: Project[] = [
   {
     title: "Mordern Restaurant Website",
     description: "A fully responsive and visually engaging restaurant website built with React. This project features a dynamic menu with category filtering, a reservation form with validation, a photo gallery, and a newsletter sign-up section. Smooth transitions and animations enhance the user experience, making it feel elegant and interactive across all devices.",
-    technologies: ["React", "Taailwind CSS", "Framer Motion"],
+    technologies: ["React", "Tailwind CSS", "Framer Motion"],
     imageUrl: restaurantImage,
     githubUrl: "https://github.com/JAYDEN2904/Restaurant.git",
     liveUrl: "https://saveur-restaurant.vercel.app",
@@ -124,7 +124,7 @@ const Projects: React.FC = () => {
                 className="group relative bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden"
               >
                 {/* Project Image */}
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-60 overflow-hidden">
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"
                     initial={{ opacity: 0 }}
