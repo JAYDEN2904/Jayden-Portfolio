@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github, ExternalLink, Folder } from 'lucide-react';
-import faithBaptistImage from '../assets/faithBaptist.png';
+import faithBaptist from '../assets/faithBaptist.jpg';
 import aquanetImage from '../assets/AQUANET.jpeg';
-import bookshopImage from '../assets/bookshop.png';
 import restaurantImage from '../assets/Restaurant.png'
 
 interface Project {
@@ -22,7 +21,7 @@ const projects: Project[] = [
     title: "School Website",
     description: "A modern educational institution website featuring admissions, academics, and student life. Built with a focus on user experience and accessibility.",
     technologies: ["React", "Tailwind CSS"],
-    imageUrl: faithBaptistImage,
+    imageUrl: faithBaptist,
     githubUrl: "https://github.com/JAYDEN2904/Faith-Baptist-Project.git",
     liveUrl: "https://fcbcs.vercel.app",
     category: "frontend",
