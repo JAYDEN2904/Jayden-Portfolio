@@ -31,7 +31,7 @@ const About: React.FC = () => {
       location: 'Accra, Ghana'
     },
     {
-      year: 'March 2025 - Present',
+      year: 'March 2025 - May 2025',
       title: 'Software Engineer, Intern',
       description: 'Designed wireframes and mockups of websites using Figma. Also collaborated with senior engineers on projects. I also developed websites using the React framework.',
       category: 'work',
@@ -156,7 +156,7 @@ Beyond coding, I love working on personal projects, learning new technologies, a
 
             {/* Download Resume Button */}
             <motion.a
-              href="/jayden-resume.pdf"
+              href="/Jayden Software Engineering Resume -2.pdf"
               download="Jayden_Osafo_Resume.pdf"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
