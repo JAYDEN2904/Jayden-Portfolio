@@ -4,6 +4,7 @@ import { Github, ExternalLink, Folder } from 'lucide-react';
 import faithBaptist from '../assets/faithBaptist.jpg';
 import aquanetImage from '../assets/AQUANET.jpeg';
 import restaurantImage from '../assets/Restaurant.png'
+import bookshopImage from '../assets/Bookshop Image.png'
 
 interface Project {
   title: string;
@@ -46,7 +47,17 @@ const projects: Project[] = [
     liveUrl: "https://saveur-restaurant.vercel.app",
     category: "frontend",
     featured: true
-  }
+  },
+  {
+    title: "Bookshop Management System",
+    description: "A full-stack bookshop management system built with the MERN stack. This system allows admins to manage inventory, track sales, and monitor student purchases, while cashiers can process transactions in real-time. The platform features role-based authentication, low-stock alerts, and a clean, intuitive interface that enhances usability across devices. Smooth navigation and well-structured flows make it practical, efficient, and user-friendly.",
+    technologies: ["React", "Node.js", "Express.js","Supabase", "PostgreSQL", "RESTful API"],
+    imageUrl: bookshopImage,
+    githubUrl: "https://github.com/JAYDEN2904/Bookshop-Management.git",
+    liveUrl: "https://bookshop-management.vercel.app",
+    category: "fullstack",
+    featured: true
+  },
   // Add more projects here
 ];
 
