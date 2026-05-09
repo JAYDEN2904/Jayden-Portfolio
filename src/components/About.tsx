@@ -164,8 +164,8 @@ Beyond coding, I love working on personal projects, learning new technologies, a
 
             {/* Download Resume Button */}
             <motion.a
-              href="public/Jayden Osafo_Resume.pdf"
-              download="public/Jayden Osafo_Resume.pdf"
+              href={encodeURI('/Jayden Osafo_Resume.pdf')}
+              download="Jayden_Osafo_Resume.pdf"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-amber-500 text-white font-medium hover:from-orange-600 hover:to-amber-600 transition-all shadow-lg hover:shadow-orange-500/20"
