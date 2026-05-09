@@ -39,6 +39,14 @@ const About: React.FC = () => {
       location: 'Accra, Ghana'
     },
     {
+      year: 'August 2025 - November 2025',
+      title: 'Frontend Developer  , Intern',
+      description: 'Developed frontend components for a web application using Next.js. Also collaborated with senior developers on projects.',
+      category: 'work',
+      company: 'Inkventory Solutions Limited',
+      location: 'Accra, Ghana'
+    },
+    {
       year: 'Present',
       title: "Bachelors in Computer Science",
       description: 'Currently pursuing a Bachelor\'s degree in Computer Science at the University of Ghana',
@@ -56,12 +64,12 @@ const About: React.FC = () => {
 
   const statistics: Statistic[] = [
     {
-      value: '2+',
+      value: '3+',
       label: 'Years Experience',
       icon: <Code className="w-6 h-6" />
     },
     {
-      value: '3+',
+      value: '6+',
       label: 'Projects Completed',
       icon: <Award className="w-6 h-6" />
     },
@@ -156,7 +164,7 @@ Beyond coding, I love working on personal projects, learning new technologies, a
 
             {/* Download Resume Button */}
             <motion.a
-              href="/Jayden Software Engineering Resume -2.pdf"
+              href="public/Jayden Osafo_Resume.pdf"
               download="Jayden_Osafo_Resume.pdf"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
