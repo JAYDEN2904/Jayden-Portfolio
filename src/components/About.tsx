@@ -39,7 +39,7 @@ const About: React.FC = () => {
       location: 'Accra, Ghana'
     },
     {
-      year: 'August 2025 - November 2025',
+      year: 'July 2025 - October 2025',
       title: 'Frontend Developer  , Intern',
       description: 'Developed frontend components for a web application using Next.js. Also collaborated with senior developers on projects.',
       category: 'work',
@@ -164,7 +164,7 @@ Beyond coding, I love working on personal projects, learning new technologies, a
 
             {/* Download Resume Button */}
             <motion.a
-              href={encodeURI('/Jayden Osafo_Resume.pdf')}
+              href={encodeURI('/Jayden_Osafo_Resume.pdf')}
               download="Jayden_Osafo_Resume.pdf"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
