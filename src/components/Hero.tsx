@@ -137,7 +137,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl mb-8 text-gray-400 tracking-wider font-light"
           >
-            SOFTWARE ENGINEER & WEB DEVELOPER
+            SOFTWARE ENGINEER
           </motion.p>
 
           <motion.p

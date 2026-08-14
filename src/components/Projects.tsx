@@ -91,7 +91,7 @@ const Projects: React.FC = () => {
             Featured Projects
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            A collection of my recent work, showcasing my expertise in web development and design.
+            A collection of my recent work, showcasing my expertise in software engineering.
           </p>
         </motion.div>
 
